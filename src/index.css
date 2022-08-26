@@ -1,13 +1,134 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap");
+
+html {
+  scroll-behavior: smooth;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  max-width: 986px;
+  width: 100%;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+  color: #707070;
+}
+a:hover {
+  color: #069c54;
+}
+.app {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.product__container {
+}
+
+.product__error {
+}
+
+.product__card {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.card__content {
+  position: relative;
+  border-radius: 0.5rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.card__image {
+  border-radius: 0.5rem;
+}
+.card__title-wrapper {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card__title {
+}
+.card__price {
+}
+
+.card__button {
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  border: none;
+}
+
+.cart__button--add {
+  background-color: #069c54;
+}
+.card__button--remove {
+  background-color: red;
+}
+
+.details__container {
+  margin: 2rem;
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.details__img {
+  border-radius: 0.5rem;
+  width: 90%;
+}
+
+.details__content {
+}
+
+.details__title {
+}
+
+.details__price {
+  margin: 1.5rem 0;
+  font-size: 2rem;
+}
+.details__description {
+  color: #707070;
+  font-size: 1.2rem;
+}
+
+.cart__container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+.cart__img {
+  width: 30%;
+  border-radius: 0.5rem;
+}
+.cart__content {
+  display: flex;
+  justify-content: space-around;
+}
+.cart__title {
+  font-size: 1.5rem;
+}
+.cart__price {
+  color: #069c54;
+  font-size: 2rem;
 }
